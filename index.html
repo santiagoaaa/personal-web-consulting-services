@@ -252,6 +252,18 @@
     gap:6px;
     align-items:center;
   }
+  /* otros servicios: distribuir a lo ancho */
+  #otros-servicios .wrap{max-width:1120px;}
+  #otros-servicios .option-grid{display:grid; grid-template-columns:1fr; gap:16px;}
+  #otros-servicios .option-card{padding:26px 22px;}
+  @media (min-width: 640px){
+    #otros-servicios .option-grid{grid-template-columns:repeat(2, 1fr);}
+    #otros-servicios .option-card:last-child:nth-child(odd){grid-column:1 / -1;}
+  }
+  @media (min-width: 960px){
+    #otros-servicios .option-grid{grid-template-columns:repeat(3, 1fr); gap:20px;}
+    #otros-servicios .option-card:last-child:nth-child(odd){grid-column:auto;}
+  }
 </style>
 </head>
 <body>
@@ -299,6 +311,32 @@
   </div>
 </section>
 
+<section id="otros-servicios">
+  <div class="wrap">
+    <h2>Explora mis otros servicios</h2>
+    <div class="option-grid">
+      <div class="option-card">
+        <p class="tag">Para negocios o personas que requieren ayuda con su computadora</p>
+        <h3>Soporte Técnico Informático</h3>
+        <p class="desc" style="text-align: justify;">Soluciones profesionales para mantener tus equipos funcionando correctamente, mejorar su rendimiento y resolver problemas de hardware y software.</p>
+        <a class="btn" href="soporteTecnicoInformatico.html">Saber más</a>
+      </div>
+      <div class="option-card">
+        <p class="tag">Para negocios que dependen de llamadas</p>
+        <h3>Atención al cliente automatizado</h3>
+        <p class="desc" style="text-align: justify;">Una recepcionista virtual que contesta el teléfono de tu negocio 24 horas al día, responde las preguntas de tus clientes y agenda citas directo en tu calendario.</p>
+        <a class="btn" href="atencion-cliente.html">Saber más</a>
+      </div>
+     <div class="option-card">
+        <p class="tag">Para negocios que quieren presencia en la web</p>
+        <h3>Agencia de diseño web</h3>
+        <p class="desc" style="text-align: justify;">Creación de sitios web profesionales, rápidos y hechos a la medida de tu empresa. Desde una landing page hasta una tienda en línea o un sistema personalizado, combinamos desarrollo, automatización e inteligencia artificial para darte presencia digital y nuevas oportunidades de negocio.</p>
+        <a class="btn" href="agenciaWeb.html">Saber más</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="sobre">
   <div class="wrap">
     <h2>Sobre Santiago</h2>
@@ -339,11 +377,6 @@
         </a>
       </span>
       <span><a href="tel:+524613817331">461-381-73-31</a></span>
-      <span> 
-        <a style="text-align: justify;" href="soporteTecnicoInformatico.html">
-            Soporte Técnico para Computadoras
-        </a>
-      </span>
       <span>© 2026 Santiago Alvarado. Todos los derechos reservados.</span>
     </div>
   </div>
