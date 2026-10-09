@@ -1,0 +1,1 @@
+Abre index.html en el navegador. Edita index.html y style.css. No requiere instalación. Al publicar en otro dominio, actualiza las URL canónica, og:url y datos estructurados.

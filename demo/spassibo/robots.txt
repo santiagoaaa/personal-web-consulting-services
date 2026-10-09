@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://spassibo-spa-celaya.santiago-alvarado-48.chatgpt.site/sitemap.xml

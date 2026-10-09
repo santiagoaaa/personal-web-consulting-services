@@ -1,0 +1,13 @@
+SPASSIBO - Código de la landing
+
+Descomprime el ZIP y abre index.html en tu navegador. No requiere instalación ni compilación.
+
+index.html: contenido y SEO.
+style.css: diseño y adaptación a celulares.
+app.js: menú y consulta por WhatsApp.
+assets/: logo, fotografía ilustrativa y favicon.
+robots.txt y sitemap.xml: archivos SEO.
+
+Antes de publicar en otro dominio, actualiza las URL en canonical, og:url, datos estructurados, robots.txt y sitemap.xml.
+WhatsApp configurado: +52 461 345 9175.
+La fotografía de manicura es ilustrativa, generada con IA.

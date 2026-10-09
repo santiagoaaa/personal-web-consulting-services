@@ -1,0 +1,10 @@
+TAI SPA & SALON
+
+1. Extrae el ZIP.
+2. Abre index.html en tu navegador para ver la landing.
+3. Para publicarla, sube index.html, style.css, script.js y la carpeta assets al mismo directorio de tu hosting.
+
+No necesita npm ni compilacion. Las fuentes de Google requieren conexion a Internet.
+
+El telefono, Instagram, direccion y horarios estan en index.html.
+Los colores y el comportamiento responsive estan en style.css.

@@ -1,0 +1,12 @@
+MAR SPA - Código de la landing
+
+Descomprime y abre index.html en tu navegador. No requiere instalación ni compilación.
+
+index.html: contenido y SEO.
+style.css: diseño y estilos responsive.
+app.js: menú, categorías y consultas por WhatsApp.
+assets/: logo, imagen ilustrativa y favicon.
+robots.txt y sitemap.xml: archivos de SEO.
+
+Antes de publicar en tu dominio, actualiza las URL en canonical, og:url, datos estructurados, robots.txt y sitemap.xml.
+Los precios se consultan en WhatsApp. Las reseñas y horarios proceden de las capturas compartidas. La fotografía principal es ilustrativa generada con IA.
