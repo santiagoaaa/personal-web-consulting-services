@@ -1,0 +1,29 @@
+/* Cross-document categories and service pages; native navigation stays intact. */
+@view-transition{navigation:auto}
+:root{--motion-duration:260ms;--motion-ease:cubic-bezier(.22,.68,.25,1)}
+.header{view-transition-name:sa-header}
+::view-transition-group(*){animation-duration:var(--motion-duration);animation-timing-function:var(--motion-ease)}
+::view-transition-old(root){animation:sa-page-out 160ms ease both}
+::view-transition-new(root){animation:sa-page-in var(--motion-duration) var(--motion-ease) both}
+::view-transition-old(sa-header),::view-transition-new(sa-header){animation:none;mix-blend-mode:normal}
+::view-transition-old(sa-header){opacity:0}
+@keyframes sa-page-out{to{opacity:0;transform:translateY(-4px)}}
+@keyframes sa-page-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+/* Only the affected regions animate for filters and expanded content. */
+:root[data-motion-mode="local"] .motion-region{view-transition-name:var(--motion-name)}
+:root[data-motion-mode="local"]::view-transition-old(root){animation:none;opacity:0}
+:root[data-motion-mode="local"]::view-transition-new(root){animation:none}
+:root[data-motion-mode="local"]::view-transition-old(*){animation-duration:180ms}
+:root[data-motion-mode="local"]::view-transition-new(*){animation-duration:220ms}
+::view-transition{pointer-events:none}
+.button,.text-link,.sa-link,.sa-branch-services a,.sa-route-list a,.sa-related-grid a,.filters button,.sa-page summary,.service-list summary{transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease,transform 200ms var(--motion-ease),box-shadow 200ms ease}
+.sa-branch-services a:hover,.sa-related-grid>a:hover{transform:translateY(-2px)}
+.filters button:not(.active):hover{background:#dedede}
+.detail-icon,.sa-page summary>span{transition:transform 200ms var(--motion-ease)}
+dialog[open]{animation:sa-dialog-in 220ms var(--motion-ease)}
+@keyframes sa-dialog-in{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){
+  @view-transition{navigation:none}
+  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}

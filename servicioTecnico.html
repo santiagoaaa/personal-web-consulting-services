@@ -1,600 +1,261 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-MX">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Servicio Técnico Especializado para Empresas de Software | Santiago Alvarado</title>
-<meta name="description" content="Servicio técnico especializado en backend, APIs .NET, SQL Server, sistemas legacy y QA automatizado para equipos de desarrollo, sin contratar personal permanente.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.santiagoalvarado.com.mx/servicioTecnico.html">
-<meta name="theme-color" content="#132A46">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23132A46'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='60' font-weight='700' fill='%23E8590C' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Santiago Alvarado">
-<meta property="og:title" content="Servicio Técnico Especializado para Empresas de Software | Santiago Alvarado">
-<meta property="og:description" content="Backend, APIs .NET, SQL Server, sistemas legacy y QA automatizado para equipos de desarrollo, sin contratar personal permanente.">
-<meta property="og:url" content="https://www.santiagoalvarado.com.mx/servicioTecnico.html">
-<meta property="og:locale" content="es_MX">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Servicio Técnico Especializado para Empresas de Software | Santiago Alvarado">
-<meta name="twitter:description" content="Backend, APIs .NET, SQL Server, sistemas legacy y QA automatizado para equipos de desarrollo.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Servicio técnico especializado en backend, APIs .NET, SQL Server y QA automatizado",
-  "provider": {
-    "@type": "Person",
-    "name": "Santiago Alvarado",
-    "url": "https://www.santiagoalvarado.com.mx/"
-  },
-  "areaServed": "MX",
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "Empresas de software y equipos de desarrollo"
-  },
-  "description": "Resuelvo problemas de backend, APIs, SQL Server, sistemas legacy y calidad de software para equipos de desarrollo que necesitan capacidad técnica especializada sin incorporar personal permanente."
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.santiagoalvarado.com.mx/"},
-    {"@type": "ListItem", "position": 2, "name": "Servicio técnico especializado", "item": "https://www.santiagoalvarado.com.mx/servicioTecnico.html"}
-  ]
-}
-</script>
-<style>
-  :root{
-    --blueprint:#132A46;
-    --blueprint-deep:#0D1F36;
-    --paper:#EFEAE0;
-    --line:#3E5877;
-    --line-soft:rgba(220,228,240,0.16);
-    --ink:#DCE4F0;
-    --ink-dim:#9FB0C6;
-    --orange:#E8590C;
-    --orange-dim:#B84708;
-    --teal:#4FAE96;
-    --radius:2px;
-    --maxw:720px;
-    --font-head:'Archivo', sans-serif;
-    --font-body:'IBM Plex Sans', sans-serif;
-    --font-mono:'IBM Plex Mono', monospace;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--blueprint);
-    color:var(--ink);
-    font-family:var(--font-body);
-    font-size:17px;
-    line-height:1.55;
-    -webkit-font-smoothing:antialiased;
-    transition:padding-bottom 0.2s ease;
-  }
-  @media (prefers-reduced-motion: reduce){
-    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
-  }
-  img,svg{display:block; max-width:100%;}
-  a{color:inherit;}
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
-
-  /* blueprint grid backdrop */
-  .grid-bg{
-    position:absolute; inset:0;
-    background-image:
-      linear-gradient(var(--line-soft) 1px, transparent 1px),
-      linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
-    background-size: 34px 34px;
-    opacity:0.5;
-    pointer-events:none;
-  }
-
-  header.hero{
-    position:relative;
-    padding:64px 0 40px;
-    overflow:hidden;
-    border-bottom:1px solid var(--line-soft);
-  }
-  .brandline{
-    font-family:var(--font-mono);
-    font-size:13px;
-    letter-spacing:0.02em;
-    color:var(--ink-dim);
-    margin:0 0 34px;
-  }
-  .brandline strong{color:var(--ink); font-weight:600;}
-
-  h1{
-    font-family:var(--font-head);
-    font-weight:800;
-    font-size:clamp(30px, 7vw, 44px);
-    line-height:1.12;
-    letter-spacing:-0.01em;
-    margin:0 0 20px;
-    max-width:16ch;
-  }
-  .lede{
-    font-size:17px;
-    color:var(--ink);
-    max-width:46ch;
-    margin:0 0 32px;
-  }
-
-  .gauge-row{
-    display:flex;
-    align-items:center;
-    gap:20px;
-    margin:0 0 36px;
-  }
-  .gauge-row svg{width:88px; height:88px; flex-shrink:0;}
-  .gauge-caption{font-size:14px; color:var(--ink-dim); max-width:34ch;}
-  .gauge-caption b{color:var(--ink); font-weight:600;}
-
-  .cta-block{
-    border:1px solid var(--line);
-    background:rgba(220,228,240,0.03);
-    padding:20px;
-    max-width:420px;
-  }
-  .price-line{
-    display:flex;
-    justify-content:space-between;
-    align-items:baseline;
-    font-family:var(--font-mono);
-    font-size:13px;
-    color:var(--ink-dim);
-    margin-bottom:14px;
-    padding-bottom:14px;
-    border-bottom:1px dashed var(--line);
-  }
-  .price-line .amount{
-    font-size:15px;
-    color:var(--orange);
-    font-weight:600;
-  }
-  .btn{
-    display:block;
-    width:100%;
-    text-align:center;
-    background:var(--orange);
-    color:#12130F;
-    font-family:var(--font-head);
-    font-weight:700;
-    font-size:16px;
-    padding:15px 20px;
-    border:none;
-    border-radius:var(--radius);
-    text-decoration:none;
-    cursor:pointer;
-    transition:background 0.15s ease, transform 0.1s ease;
-  }
-  .btn:hover{background:#FF6A17;}
-  .btn:active{transform:scale(0.98);}
-  .btn-note{
-    font-size:12.5px;
-    color:var(--ink-dim);
-    text-align:center;
-    margin-top:10px;
-  }
-
-  section{position:relative; padding:52px 0; border-bottom:1px solid var(--line-soft);}
-  h2{
-    font-family:var(--font-head);
-    font-weight:700;
-    font-size:clamp(22px, 5vw, 27px);
-    letter-spacing:-0.005em;
-    margin:0 0 16px;
-    max-width:22ch;
-  }
-  .section-intro{
-    font-size:15.5px;
-    color:var(--ink-dim);
-    max-width:46ch;
-    margin:0 0 28px;
-  }
-
-  /* checklist of signals */
-  .signal-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0;}
-  .signal-list li{
-    display:flex;
-    gap:14px;
-    padding:16px 0;
-    border-top:1px solid var(--line-soft);
-    font-size:15.5px;
-  }
-  .signal-list li:last-child{border-bottom:1px solid var(--line-soft);}
-  .signal-mark{
-    flex-shrink:0;
-    width:18px; height:18px;
-    margin-top:3px;
-    border:1.5px solid var(--orange);
-    position:relative;
-  }
-  .signal-mark::before, .signal-mark::after{
-    content:'';
-    position:absolute;
-    background:var(--orange);
-  }
-  .signal-mark::before{width:9px; height:1.5px; top:8px; left:4px; transform:rotate(45deg); transform-origin:left;}
-  .signal-mark::after{width:5px; height:1.5px; top:11px; left:4px; transform:rotate(-45deg); transform-origin:left;}
-
-  /* capability grid */
-  .capability-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:14px;
-  }
-  .capability-card{
-    border:1px solid var(--line);
-    padding:18px;
-    position:relative;
-  }
-  .capability-card::before{
-    content:'';
-    position:absolute;
-    top:-1px; left:-1px;
-    width:10px; height:10px;
-    border-top:2px solid var(--orange);
-    border-left:2px solid var(--orange);
-  }
-  .capability-card h3{
-    font-family:var(--font-head);
-    font-weight:600;
-    font-size:16px;
-    line-height:1.3;
-    margin:0 0 8px;
-    color:var(--ink);
-  }
-  .capability-card p{
-    font-size:14.5px;
-    color:var(--ink-dim);
-    margin:0;
-  }
-  @media (min-width: 560px){
-    .capability-grid{grid-template-columns:repeat(2, 1fr);}
-  }
-
-  /* about / plain text sections */
-  .about-row{display:flex; flex-direction:column; gap:18px;}
-  .about-row p{font-size:15.5px; margin:0 0 14px;}
-  .credentials{
-    font-family:var(--font-mono);
-    font-size:12.5px;
-    color:var(--ink-dim);
-    padding-top:5px;
-    display:flex;
-    flex-direction:column;
-    gap:6px;
-  }
-
-  /* process steps */
-  .process-steps{
-    list-style:none;
-    counter-reset:step;
-    margin:0;
-    padding:0;
-    display:flex;
-    flex-direction:column;
-    gap:24px;
-  }
-  .process-steps li{
-    counter-increment:step;
-    display:flex;
-    gap:16px;
-  }
-  .process-steps li::before{
-    content:counter(step);
-    flex-shrink:0;
-    width:32px; height:32px;
-    border:1.5px solid var(--orange);
-    color:var(--orange);
-    font-family:var(--font-mono);
-    font-size:14px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .process-steps li h3{
-    font-family:var(--font-head);
-    font-weight:600;
-    font-size:17px;
-    margin:0 0 6px;
-    color:var(--ink);
-  }
-  .process-steps li p{
-    margin:0;
-    font-size:14.5px;
-    color:var(--ink-dim);
-  }
-
-  /* specialty tags */
-  .tag-row{display:flex; flex-wrap:wrap; gap:10px;}
-  .tag-chip{
-    border:1px solid var(--line);
-    padding:8px 14px;
-    font-family:var(--font-mono);
-    font-size:13px;
-    color:var(--ink-dim);
-  }
-
-  .final-cta{text-align:left; padding:56px 0 90px;}
-  .final-cta h2{max-width:100%;}
-
-  footer{padding:28px 0 24px; font-size:12.5px; color:var(--ink-dim); font-family:var(--font-mono);}
-
-  /* sticky mobile bar */
-  .sticky-bar{
-    position:fixed; left:0; right:0; bottom:0;
-    background:var(--blueprint-deep);
-    border-top:1px solid var(--line);
-    padding:10px 16px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:12px;
-    z-index:50;
-    transform:translateY(100%);
-    transition:transform 0.25s ease;
-  }
-  .sticky-bar.show{transform:translateY(0);}
-  .sticky-bar .amount{
-    font-family:var(--font-mono);
-    font-size:14px;
-    color:var(--ink);
-  }
-  .sticky-bar .btn{width:auto; padding:11px 18px; font-size:14.5px; white-space:nowrap;}
-
-  /* floating back-to-index button */
-  .back-to-index{
-    position:fixed;
-    top:16px; left:16px;
-    z-index:80;
-    display:flex;
-    align-items:center;
-    gap:6px;
-    background:var(--blueprint-deep);
-    border:1px solid var(--line);
-    color:var(--ink-dim);
-    font-family:var(--font-mono);
-    font-size:12.5px;
-    padding:9px 14px 9px 11px;
-    text-decoration:none;
-    border-radius:var(--radius);
-    transition:border-color 0.15s ease, color 0.15s ease;
-  }
-  .back-to-index:hover{border-color:var(--orange); color:var(--orange);}
-  .back-to-index svg{width:13px; height:13px; flex-shrink:0;}
-
-</style>
-<script
-    id="retell-widget"
-    src="https://dashboard.retellai.com/retell-widget-v2.js"
-    type="module"
-    data-public-key="key_074747fa686d7c9c30ac00543156"
-    data-agent-id="agent_d63f85e2b59d43fbc527521a93"
-    data-agent-version="YOUR_AGENT_VERSION"
-    data-title="Resuelve tus dudas"
-    data-logo-url="img/logo.jpeg"
-    data-color="#773e3e"
-    data-theme-color="#132A46"
-    data-component-color="#773e3e"
-    data-fab-text="Asistente IA..."
-    data-bot-name="Andrea, asistente IA"
-    data-popup-message="¡Hola! Escribeme para saber más"
-    data-show-ai-popup="true"
-    data-show-ai-popup-time="5"
-    data-auto-open="false"
-></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Backend, APIs y SQL Server | Santiago Alvarado</title>
+    <meta name="description"
+        content="Refuerzo técnico para empresas de software: backend .NET, APIs REST, SQL Server, aplicaciones legacy y QA automatizado. Colaboración puntual o por proyecto.">
+    <meta name="theme-color" content="#eeeeee">
+    <meta property="og:title" content="Backend, APIs y SQL Server | Santiago Alvarado">
+    <meta property="og:description"
+        content="Refuerzo técnico para empresas de software: backend .NET, APIs REST, SQL Server, aplicaciones legacy y QA automatizado. Colaboración puntual o por proyecto.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23222222'/%3E%3Ctext x='4' y='23' font-family='Arial' font-size='22' font-weight='700' fill='%23eeeeee'%3Esa%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/motion.css">
+    <link rel="canonical" href="https://www.santiagoalvarado.com.mx/servicioTecnico.html">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="author" content="Santiago Alvarado">
+    <meta property="og:url" content="https://www.santiagoalvarado.com.mx/servicioTecnico.html">
+    <meta property="og:site_name" content="Santiago Alvarado">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Backend, APIs y SQL Server | Santiago Alvarado">
+    <meta name="twitter:description"
+        content="Refuerzo técnico para empresas de software: backend .NET, APIs REST, SQL Server, aplicaciones legacy y QA automatizado. Colaboración puntual o por proyecto.">
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.santiagoalvarado.com.mx/servicioTecnico.html#webpage","url":"https://www.santiagoalvarado.com.mx/servicioTecnico.html","name":"Backend, APIs y SQL Server | Santiago Alvarado","description":"Refuerzo técnico para empresas de software: backend .NET, APIs REST, SQL Server, aplicaciones legacy y QA automatizado. Colaboración puntual o por proyecto.","inLanguage":"es-MX","isPartOf":{"@id":"https://www.santiagoalvarado.com.mx/#website"},"about":{"@id":"https://www.santiagoalvarado.com.mx/#organization"},"breadcrumb":{"@id":"https://www.santiagoalvarado.com.mx/servicioTecnico.html#breadcrumb"},"mainEntity":{"@id":"https://www.santiagoalvarado.com.mx/servicioTecnico.html#service"}},{"@type":"BreadcrumbList","@id":"https://www.santiagoalvarado.com.mx/servicioTecnico.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.santiagoalvarado.com.mx/"},{"@type":"ListItem","position":2,"name":"Software especializado","item":"https://www.santiagoalvarado.com.mx/servicioTecnico.html"}]},{"@type":"Service","@id":"https://www.santiagoalvarado.com.mx/servicioTecnico.html#service","name":"Servicio técnico especializado para empresas de software","serviceType":"Servicio técnico especializado para empresas de software","url":"https://www.santiagoalvarado.com.mx/servicioTecnico.html","description":"Refuerzo técnico para empresas de software: backend .NET, APIs REST, SQL Server, aplicaciones legacy y QA automatizado. Colaboración puntual o por proyecto.","provider":{"@id":"https://www.santiagoalvarado.com.mx/#organization"},"areaServed":{"@type":"Country","name":"México"}},{"@type":"Organization","@id":"https://www.santiagoalvarado.com.mx/#organization","name":"Santiago Alvarado","url":"https://www.santiagoalvarado.com.mx/","email":"contacto@santiagoalvarado.com.mx","telephone":"+524613817331","founder":{"@id":"https://www.santiagoalvarado.com.mx/#santiago"},"contactPoint":{"@type":"ContactPoint","telephone":"+524613817331","email":"contacto@santiagoalvarado.com.mx","contactType":"Consultas de servicios","availableLanguage":"es"},"department":[{"@type":"Organization","name":"Santiago Alvarado Studio Digital","url":"https://www.santiagoalvarado.com.mx/studioWeb.html"},{"@type":"Organization","name":"Santiago Alvarado Engineering","url":"https://www.santiagoalvarado.com.mx/consultoriaEmpresarial.html"}]},{"@type":"Person","@id":"https://www.santiagoalvarado.com.mx/#santiago","name":"Santiago Alvarado","url":"https://www.santiagoalvarado.com.mx/","jobTitle":"Desarrollador y consultor de tecnología"},{"@type":"WebSite","@id":"https://www.santiagoalvarado.com.mx/#website","url":"https://www.santiagoalvarado.com.mx/","name":"Santiago Alvarado","inLanguage":"es-MX","publisher":{"@id":"https://www.santiagoalvarado.com.mx/#organization"}}]}</script>
 </head>
-<body>
 
-<a class="back-to-index" href="index.html" aria-label="Volver al inicio">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-  Inicio
-</a>
-
-<header class="hero">
-  <div class="grid-bg"></div>
-  <div class="wrap" style="position:relative;">
-    <p class="brandline"><a href="index.html" style="color:inherit; text-decoration:none;"><strong>Santiago Alvarado</strong></a> — Consultor de tecnología y resolución de problemas</p>
-    <h1>Servicio técnico especializado para empresas de software</h1>
-    <p class="lede">Resuelvo problemas de backend, APIs, SQL Server, sistemas legacy y calidad de software para equipos de desarrollo que necesitan capacidad técnica especializada sin incorporar personal permanente.</p>
-
-    <div class="gauge-row">
-      <svg viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="44" fill="none" stroke="var(--line)" stroke-width="2"/>
-        <path d="M 14 62 A 44 44 0 0 1 86 62" fill="none" stroke="var(--line-soft)" stroke-width="6"/>
-        <path d="M 14 62 A 44 44 0 0 1 50 8" fill="none" stroke="var(--orange)" stroke-width="6" stroke-linecap="round"/>
-        <line x1="50" y1="50" x2="74" y2="26" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round">
-          <animateTransform attributeName="transform" type="rotate" from="-15 50 50" to="10 50 50" dur="1.8s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
-        </line>
-        <circle cx="50" cy="50" r="4" fill="var(--ink)"/>
-      </svg>
-      <p class="gauge-caption">Refuerzo técnico bajo demanda, integrado a tu equipo y tus procesos actuales.</p>
-    </div>
-
-    <div class="cta-block">
-      <div class="price-line">
-        <span class="amount">Puntual · Bolsa de horas · Por proyecto</span>
-      </div>
-      <a class="btn" href="https://wa.me/524613817331?text=Hola%20Santiago%2C%20mi%20equipo%20tiene%20un%20proyecto%20que%20necesita%20apoyo%20t%C3%A9cnico" target="_blank" rel="noopener noreferrer">Cuéntame tu proyecto</a>
-      <p class="btn-note">Respuesta en menos de 24 horas hábiles</p>
-    </div>
-  </div>
-</header>
-
-<section id="cuando-apoyo">
-  <div class="wrap">
-    <h2>Cuando tu equipo necesita apoyo</h2>
-    <p class="section-intro">Puedo integrarme en proyectos donde necesiten:</p>
-    <ul class="signal-list">
-      <li><span class="signal-mark"></span> Diagnóstico y optimización de SQL Server y consultas complejas.</li>
-      <li><span class="signal-mark"></span> Desarrollo y mantenimiento de APIs .NET.</li>
-      <li><span class="signal-mark"></span> Mantenimiento y optimización de aplicaciones existentes.</li>
-      <li><span class="signal-mark"></span> Mantenimiento de aplicaciones legacy.</li>
-      <li><span class="signal-mark"></span> Pruebas QA para APIs y sitios web con postman y selenium.</li>
-      <li><span class="signal-mark"></span> Apoyo temporal para proyectos con alta carga de trabajo.</li>
-    </ul>
-  </div>
-</section>
-
-<section id="sin-contratar">
-  <div class="wrap">
-    <h2>No necesitas personal de tiempo completo</h2>
-    <div class="about-row">
-      <p>Puedes contratarme para resolver un problema específico, reforzar temporalmente a tu equipo, ejecutar pruebas o participar en una parte concreta de un proyecto.</p>
-    </div>
-
-    <h2>Trabajo con tu equipo</h2>
-    <div class="about-row">
-      <p>Me incorporo al proyecto existente, entiendo su contexto técnico y trabajo con las herramientas y flujo de desarrollo que ya utiliza tu equipo.</p>
-      <p>Git · Pull Requests · Documentación técnica · Code Review · Scrum/Kanban</p>
-    </div>
-  </div>
-</section>
-
-<section id="ejemplos">
-  <div class="wrap">
-    <h2>Algunos ejemplos prácticos</h2>
-    <div class="capability-grid">
-      <div class="capability-card">
-        <h3>SQL Server lento</h3>
-        <p>Analizo consultas, procedimientos almacenados, índices y planes de ejecución para identificar las causas del problema y aplicar mejoras.</p>
-      </div>
-      <div class="capability-card">
-        <h3>Proyecto atrasado</h3>
-        <p>Me incorporo al equipo para resolver componentes específicos de backend o integraciones y ayudar a recuperar el ritmo del proyecto.</p>
-      </div>
-      <div class="capability-card">
-        <h3>Testing para APIs</h3>
-        <p>Creo pruebas automatizadas para validar endpoints, códigos de respuesta, datos, autenticación, escenarios positivos y negativos, ayudando a detectar errores antes de llegar a producción.</p>
-      </div>
-      <div class="capability-card">
-        <h3>Testing para sitios web</h3>
-        <p>Automatizo flujos críticos como inicio de sesión, formularios, operaciones principales y otros procesos de negocio para facilitar las pruebas de regresión en cada nueva versión.</p>
-      </div>
-      <div class="capability-card">
-        <h3>Necesidad temporal de capacidad</h3>
-        <p>Tu equipo puede contar con experiencia especializada durante el tiempo que realmente la necesita.</p>
-      </div>
-      <div class="capability-card">
-        <h3>Legacy y Rescue</h3>
-        <p>Me incorporo en el analisis y mantenimiento en aplicaciones antiguas dificiles de mantener, código sin pruebas, problemas de rendiminedo, sistemas que necesitan evolucionar si reescribirlo completamente.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="como-trabajamos">
-  <div class="wrap">
-    <h2>¿Cómo trabajamos?</h2>
-    <ol class="process-steps">
-      <li>
-        <div>
-          <h3>Conversación inicial</h3>
-          <p>Conocemos el proyecto, el problema y el tipo de apoyo que necesita tu equipo.</p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <h3>Definimos el alcance</h3>
-          <p>Determinamos si conviene una intervención puntual, una bolsa de horas o colaboración durante un periodo determinado.</p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <h3>Me integro al proyecto</h3>
-          <p>Trabajo directamente con tu equipo y bajo los procesos técnicos que ya utilizan.</p>
-        </div>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<section id="especialidades">
-  <div class="wrap">
-    <h2>Especialidades</h2>
-    <div class="tag-row">
-      <span class="tag-chip">.NET</span>
-      <span class="tag-chip">C#</span>
-      <span class="tag-chip">APIs REST</span>
-      <span class="tag-chip">SQL Server</span>
-      <span class="tag-chip">Optimización de consultas</span>
-      <span class="tag-chip">Stored Procedures</span>
-      <span class="tag-chip">Integraciones</span>
-      <span class="tag-chip">QA Automatizado</span>
-      <span class="tag-chip">Pruebas de APIs</span>
-      <span class="tag-chip">Pruebas Web</span>
-      <span class="tag-chip">Aplicaciones Empresariales</span>
-      <span class="tag-chip">Mantenimiento de aplicaciones legacy</span>
-    </div>
-  </div>
-</section>
-
-<section class="final-cta" id="contacto">
-  <div class="wrap">
-    <h2>¿Tienes un proyecto que necesita apoyo técnico?</h2>
-    <div class="cta-block">
-      <p class="lede" style="font-size:15px; margin:0 0 18px;">Cuéntame qué problema está enfrentando tu equipo y revisamos la mejor forma de apoyarlo.</p>
-      <a class="btn" href="https://wa.me/524613817331?text=Hola%20Santiago%2C%20mi%20equipo%20tiene%20un%20proyecto%20que%20necesita%20apoyo%20t%C3%A9cnico" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
-      <p class="btn-note">Responde en menos de 24 horas hábiles</p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="credentials">
-      <span><b>Santiago Alvarado</b></span>
-      <span>Consultor de tecnología y resolución de problemas</span>
-       <span> 
-        <a style="text-align: justify;" href="mailto:contacto@santiagoalvarado.com.mx">
-            contacto@santiagoalvarado.com.mx
-        </a>
-      </span>
-      <span><a href="tel:+524613817331">461-381-73-31</a></span>
-      <span>Backend · APIs .NET · SQL Server · QA Automatizado · Integraciones</span>
-      <span>© 2026 Santiago Alvarado. Todos los derechos reservados.</span>
-    </div>
-  </div>
-</footer>
-
-<div class="sticky-bar" id="stickyBar">
-  <span class="amount">¿Tu equipo necesita refuerzo técnico?</span>
-  <a class="btn" href="https://wa.me/524613817331?text=Hola%20Santiago%2C%20mi%20equipo%20tiene%20un%20proyecto%20que%20necesita%20apoyo%20t%C3%A9cnico" target="_blank" rel="noopener noreferrer">Escríbeme</a>
-</div>
-
-<script>
-  (function(){
-    var bar = document.getElementById('stickyBar');
-    var hero = document.querySelector('.cta-block');
-    if(!bar || !hero) return;
-    var shown = false;
-    function check(){
-      var trigger = hero.getBoundingClientRect().bottom < 0;
-      if(trigger && !shown){
-        bar.classList.add('show');
-        shown = true;
-        document.body.style.paddingBottom = bar.offsetHeight + 'px';
-      } else if(!trigger && shown){
-        bar.classList.remove('show');
-        shown = false;
-        document.body.style.paddingBottom = '0';
-      }
-    }
-    window.addEventListener('scroll', check, {passive:true});
-    window.addEventListener('resize', function(){ if(shown){ document.body.style.paddingBottom = bar.offsetHeight + 'px'; } });
-    check();
-  })();
-</script>
-
+<body class="sa-page"><a class="skip" href="#contenido">Ir al contenido</a>
+    <header class="header"><a class="wordmark" href="index.html"
+            aria-label="Santiago Alvarado, inicio">santiago<span>alvarado.</span></a><button class="menu-toggle"
+            aria-expanded="false" aria-controls="navigation">Menú</button>
+        <nav id="navigation" aria-label="Navegación principal"><a href="index.html">Inicio</a><a
+                href="studioWeb.html">Diseño web</a><a href="asistenteIA.html">Asistente IA</a><a
+                href="consultoriaEmpresarial.html">Consultoría</a><a href="servicioTecnico.html"
+                aria-current="page">Software especializado</a><a href="soporteTecnicoInformatico.html">Soporte
+                informático</a><a class="button" href="#contacto">Hablemos</a></nav>
+    </header>
+    <main id="contenido">
+        <section class="sa-hero">
+            <nav class="sa-breadcrumb" aria-label="Ruta de navegación"><a
+                    href="index.html">Inicio</a><span>/</span><span>Engineering · Software especializado</span></nav>
+            <div class="sa-kicker">SANTIAGO ALVARADO / ENGINEERING · SOFTWARE ESPECIALIZADO</div>
+            <div class="sa-hero-grid">
+                <div>
+                    <h1>El refuerzo técnico<br>que necesita<br><span class="serif">tu equipo.</span></h1>
+                    <p class="sa-lead">Diagnóstico y resolución de problemas de backend, APIs REST, SQL Server, sistemas
+                        legacy y calidad de software. Experiencia especializada o capacidad adicional, integrada a tus
+                        procesos.</p>
+                    <div class="sa-actions"><a class="button"
+                            href="https://wa.me/524613817331?text=Hola%20Santiago%2C%20me%20interesa%20servicio%20t%C3%A9cnico%20especializado%20para%20mi%20equipo%20de%20software.%20%C2%BFPodemos%20revisar%20mi%20caso%3F"
+                            target="_blank" rel="noopener noreferrer">Cuéntame tu proyecto</a><a class="sa-link"
+                            href="#especialidades">Ver especialidades</a></div>
+                </div>
+                <aside class="sa-note"><span class="sa-kicker">COLABORACIÓN BAJO
+                        DEMANDA.</span><strong>Código.<br>Contexto.<br>Criterio.</strong>
+                    <p>Apoyo técnico para empresas de software.</p>
+                    <div class="sa-note-lines"><span>Intervención puntual</span><span>Bolsa de
+                            horas</span><span>Colaboración por proyecto</span></div>
+                </aside>
+            </div>
+            <nav class="sa-local-nav" aria-label="Secciones de esta página"><a class="sa-link"
+                    href="#especialidades">Especialidades</a><a class="sa-link" href="#ejemplos">Casos de uso</a><a
+                    class="sa-link" href="#colaboracion">Colaboración</a><a class="sa-link"
+                    href="#proceso">Proceso</a><a class="sa-link" href="#preguntas">Preguntas</a></nav>
+        </section>
+        <section id="especialidades" class="sa-section">
+            <div class="sa-section-head">
+                <div>
+                    <div class="sa-kicker">DONDE PUEDO APORTAR.</div>
+                    <h2>Cuando hace falta<br>experiencia <span class="serif">específica.</span></h2>
+                </div>
+            </div>
+            <div class="sa-grid">
+                <article class="sa-service"><span class="sa-kicker">01</span>
+                    <h3>SQL Server y rendimiento</h3>
+                    <p>Diagnóstico y optimización de consultas complejas, procedimientos almacenados, índices y planes
+                        de ejecución.</p>
+                </article>
+                <article class="sa-service"><span class="sa-kicker">02</span>
+                    <h3>Backend y APIs .NET</h3>
+                    <p>Desarrollo y mantenimiento de endpoints, lógica de negocio e integraciones.</p>
+                </article>
+                <article class="sa-service"><span class="sa-kicker">03</span>
+                    <h3>Aplicaciones existentes</h3>
+                    <p>Corrección de fallas, mantenimiento y mejoras de rendimiento en sistemas empresariales.</p>
+                </article>
+                <article class="sa-service"><span class="sa-kicker">04</span>
+                    <h3>Legacy & rescue</h3>
+                    <p>Análisis y mantenimiento de aplicaciones antiguas, código difícil de mantener y sistemas que
+                        necesitan evolucionar.</p>
+                </article>
+                <article class="sa-service"><span class="sa-kicker">05</span>
+                    <h3>QA para APIs</h3>
+                    <p>Pruebas con Postman de autenticación, respuestas, datos y escenarios positivos y negativos.</p>
+                </article>
+                <article class="sa-service"><span class="sa-kicker">06</span>
+                    <h3>QA para sitios web</h3>
+                    <p>Automatización con Selenium de flujos críticos y pruebas de regresión en cada nueva versión.</p>
+                </article>
+            </div>
+        </section>
+        <section id="ejemplos" class="sa-section">
+            <div class="sa-section-head">
+                <div>
+                    <div class="sa-kicker">SITUACIONES CONCRETAS.</div>
+                    <h2>Un problema definido.<br>Una intervención <span class="serif">enfocada.</span></h2>
+                </div>
+            </div>
+            <div class="sa-scenarios">
+                <article>
+                    <h3>SQL Server está lento</h3>
+                    <p>Analizo consultas, procedimientos e índices para encontrar la causa y aplicar mejoras.</p>
+                </article>
+                <article>
+                    <h3>El proyecto necesita recuperar ritmo</h3>
+                    <p>Me incorporo en componentes específicos de backend o integraciones.</p>
+                </article>
+                <article>
+                    <h3>Hay errores antes de cada entrega</h3>
+                    <p>Creo pruebas automatizadas para APIs y flujos web que ayudan a detectar regresiones.</p>
+                </article>
+                <article>
+                    <h3>El sistema legacy necesita evolucionar</h3>
+                    <p>Reviso lo existente y planteo cambios graduales para estabilizarlo sin asumir una reescritura
+                        completa.</p>
+                </article>
+            </div>
+        </section>
+        <section id="colaboracion" class="sa-band">
+            <div><span class="sa-kicker">TRABAJO CON TU EQUIPO.</span>
+                <h2>Tu proyecto.<br>Tus herramientas.<br>Mi <span class="serif">experiencia.</span></h2>
+            </div>
+            <div>
+                <p>Me incorporo al proyecto existente, entiendo su contexto técnico y trabajo con las herramientas y el
+                    flujo de desarrollo que tu equipo ya utiliza.</p>
+                <div class="sa-pills"><span>Git</span><span>Pull requests</span><span>Code
+                        review</span><span>Documentación técnica</span><span>Scrum / Kanban</span></div>
+                <p>No necesitas incorporar personal de tiempo completo para resolver un componente, ejecutar pruebas o
+                    reforzar una entrega.</p>
+            </div>
+        </section>
+        <section id="modalidades" class="sa-section">
+            <div class="sa-section-head">
+                <div>
+                    <div class="sa-kicker">ALCANCE ACORDADO DESDE EL INICIO.</div>
+                    <h2>La modalidad que<br>necesita tu <span class="serif">proyecto.</span></h2>
+                </div>
+                <p>La propuesta se define según el contexto, alcance y disponibilidad requerida.</p>
+            </div>
+            <div class="sa-grid">
+                <article class="sa-service"><span class="sa-kicker">01</span>
+                    <h3>Intervención puntual</h3>
+                    <p>Para diagnosticar y resolver un problema técnico específico.</p>
+                </article>
+                <article class="sa-service"><span class="sa-kicker">02</span>
+                    <h3>Bolsa de horas</h3>
+                    <p>Para mantenimiento, pruebas y tareas definidas que necesitan apoyo flexible.</p>
+                </article>
+                <article class="sa-service"><span class="sa-kicker">03</span>
+                    <h3>Por proyecto o periodo</h3>
+                    <p>Para desarrollar un componente o reforzar temporalmente la capacidad del equipo.</p>
+                </article>
+            </div>
+        </section>
+        <section id="proceso" class="sa-section">
+            <div class="sa-section-head">
+                <div>
+                    <div class="sa-kicker">CÓMO TRABAJAMOS</div>
+                    <h2>De la conversación<br>a la <span class="serif">solución.</span></h2>
+                </div>
+            </div>
+            <div class="sa-steps">
+                <article><span>01</span>
+                    <h3>Conversar</h3>
+                    <p>Entendemos el proyecto, el problema y el tipo de apoyo que necesita tu equipo.</p>
+                </article>
+                <article><span>02</span>
+                    <h3>Acordar</h3>
+                    <p>Definimos alcance, entregables y modalidad de colaboración.</p>
+                </article>
+                <article><span>03</span>
+                    <h3>Integrarme</h3>
+                    <p>Trabajo con tus herramientas, repositorio y procesos técnicos.</p>
+                </article>
+                <article><span>04</span>
+                    <h3>Entregar</h3>
+                    <p>Revisamos los cambios y dejamos documentación del trabajo realizado.</p>
+                </article>
+            </div>
+        </section>
+        <section id="preguntas" class="sa-section sa-faq">
+            <div>
+                <div class="sa-kicker">ANTES DE EMPEZAR</div>
+                <h2>Preguntas<br><span class="serif">frecuentes.</span></h2>
+            </div>
+            <div>
+                <details>
+                    <summary>¿Puedo contratarte para una tarea concreta?<span aria-hidden="true">+</span></summary>
+                    <p>Sí. Puede ser una intervención puntual, una bolsa de horas o una colaboración por proyecto o
+                        periodo.</p>
+                </details>
+                <details>
+                    <summary>¿Trabajas con el código y flujo de mi equipo?<span aria-hidden="true">+</span></summary>
+                    <p>Sí. Me integro al proyecto y sus herramientas de desarrollo, revisión y documentación.</p>
+                </details>
+                <details>
+                    <summary>¿Qué necesitas para preparar una propuesta?<span aria-hidden="true">+</span></summary>
+                    <p>Una descripción del problema, las tecnologías, el alcance esperado y las restricciones
+                        relevantes. Los accesos técnicos se coordinan después de definir el trabajo.</p>
+                </details>
+            </div>
+        </section>
+        <section class="sa-section sa-related">
+            <div class="sa-kicker">TAMBIÉN PUEDE INTERESARTE</div>
+            <div class="sa-related-grid"><a href="consultoriaEmpresarial.html"><span>ENGINEERING</span>
+                    <h3>Consultoría empresarial</h3>
+                    <p>Para identificar qué proceso conviene automatizar antes de definir un proyecto.</p><b>Conocer el
+                        servicio</b>
+                </a><a href="soporteTecnicoInformatico.html"><span>ENGINEERING</span>
+                    <h3>Soporte para computadoras</h3>
+                    <p>Para fallas de hardware, Windows o rendimiento de los equipos.</p><b>Conocer el servicio</b>
+                </a></div>
+        </section>
+        <section id="contacto" class="sa-section sa-contact">
+            <div class="sa-kicker">EL SIGUIENTE PASO</div>
+            <h2>Tu siguiente entrega.<br>Con el apoyo <span class="serif">adecuado.</span></h2>
+            <div class="sa-contact-row">
+                <p>Cuéntame el problema, el stack y qué parte del proyecto necesita refuerzo.</p>
+                <div><a class="button"
+                        href="https://wa.me/524613817331?text=Hola%20Santiago%2C%20me%20interesa%20apoyo%20t%C3%A9cnico%20de%20backend%2C%20APIs%2C%20SQL%20Server%20o%20QA.%20%C2%BFPodemos%20revisar%20mi%20caso%3F"
+                        target="_blank" rel="noopener noreferrer">Conversemos por WhatsApp</a><a class="sa-mail"
+                        href="mailto:contacto@santiagoalvarado.com.mx">contacto@santiagoalvarado.com.mx</a></div>
+            </div>
+        </section>
+    </main>
+    <footer class="sa-footer"><a class="wordmark" href="index.html">santiago<span>alvarado.</span></a>
+        <div><strong>Studio Digital</strong><a class="sa-link" href="studioWeb.html">Diseño y desarrollo web</a><a
+                class="sa-link" href="asistenteIA.html">Asistente IA</a></div>
+        <div><strong>Engineering</strong><a class="sa-link" href="consultoriaEmpresarial.html">Consultoría
+                empresarial</a><a class="sa-link" href="servicioTecnico.html">Servicio técnico especializado</a><a
+                class="sa-link" href="soporteTecnicoInformatico.html">Soporte informático</a></div>
+        <div><a href="mailto:contacto@santiagoalvarado.com.mx">contacto@santiagoalvarado.com.mx</a><a
+                href="tel:+524613817331">461-381-73-31</a><span>Celaya, Guanajuato · México</span><small>© <span
+                    id="year">2026</span> Santiago Alvarado</small></div>
+    </footer>
+      <script defer src="js/motion.js"></script>
+    <script defer src="js/site.js"></script>
 </body>
+
 </html>
