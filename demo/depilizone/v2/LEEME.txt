@@ -1,0 +1,19 @@
+depiliZone — Landing page
+
+CONTENIDO
+index.html: contenido y estructura.
+style.css: diseño y estilos adaptables.
+script.js: filtros de servicios y selector de ciudades.
+assets/: logo, favicon e imagen principal.
+
+USO
+Extrae el ZIP y abre index.html en tu navegador.
+Para publicarlo, sube index.html, style.css, script.js y assets/ a la carpeta pública de tu hosting, conservando esta estructura. No requiere instalación ni compilación.
+
+EDICIÓN
+Los textos, servicios y enlaces se modifican en index.html.
+Los colores y tamaños se modifican en style.css.
+Las ciudades y el comportamiento de los filtros se modifican en script.js.
+
+DATOS A CONFIRMAR
+Confirma horarios, direcciones de otras sucursales y vigencia de las reseñas con el negocio antes de publicar la versión definitiva. Los enlaces de contacto dirigen a Facebook. La fotografía principal es ilustrativa y fue generada con IA.

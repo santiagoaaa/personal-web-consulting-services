@@ -1,0 +1,18 @@
+depiliZone — Landing page
+
+Archivos
+- index.html: contenido de la página.
+- styles.css: diseño y estilos adaptables.
+- app.js: menú móvil y año del pie de página.
+- assets/: logo, imagen de portada y favicon.
+- robots.txt y sitemap.xml: archivos para buscadores.
+
+Uso
+Abre index.html en tu navegador para revisar la página. Para publicarla, sube todos los archivos y la carpeta assets al directorio público de tu hosting. No requiere instalación ni compilación.
+
+Antes de publicar en otro dominio
+Actualiza en index.html las URLs canonical, og:url, og:image y los datos estructurados. Actualiza también el dominio en robots.txt y sitemap.xml.
+Las fuentes se cargan desde Google Fonts y requieren conexión a Internet.
+
+Contenido
+Todos los botones de consulta dirigen a Facebook. Los servicios proceden de la imagen compartida. Confirma horarios, precios y disponibilidad con el negocio antes de agregarlos. La imagen de portada es ilustrativa y fue generada con IA.
